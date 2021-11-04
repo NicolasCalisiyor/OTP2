@@ -15,7 +15,7 @@ public class Person {
 
     public void setGraduation(boolean graduated) {
         this.graduated = graduated;
-        System.out.println(this.getName() + " becomes a Engineer Graduate");
+        System.out.println(this.getName() + " graduates");
     }
     
     public Person(String name) {

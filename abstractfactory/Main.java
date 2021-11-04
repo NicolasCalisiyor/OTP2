@@ -5,14 +5,14 @@ public class Main {
     private static ClothesFactory factory;
     public static void main(String[] args) {
 
-        Person person = new Person("Jasper the Java Dev");
-        showOff(person);
+        Person person = new Person("Jasper");
+        showClothes(person);
         person.setGraduation(true);
-        showOff(person);
+        showClothes(person);
         
     }
 
-    public static void showOff(Person person) {
+    public static void showClothes(Person person) {
         if(person.getGraduation() == true) {
             factory = new BossClothesFactory();
         }
