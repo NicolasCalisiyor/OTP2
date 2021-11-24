@@ -187,21 +187,29 @@ Eri tapoja:
 
 Testiohjelmassa luodaan lista ja tulostetaan eri strategioilla aikaansaatu lopputulos. 
 
-b) Toteuta vähintään kolme erilaista taulukon lajittelualgoritmia (lähdekoodeja esim. https://java2novice.com/java-sorting-algorithms/. Esitä sovellus, jossa lajittelualgoritmin valinta toteutetaan Strategy-mallin mukaisesti. Generoi tarpeeksi suuri lajiteltava aineisto ja mittaa lajitteluun kuluvat ajat. 
+b) Toteuta vähintään kolme erilaista taulukon lajittelualgoritmia (lähdekoodeja esim. https://java2novice.com/java-sorting-algorithms/. 
+Esitä sovellus, jossa lajittelualgoritmin valinta toteutetaan Strategy-mallin mukaisesti. Generoi tarpeeksi suuri lajiteltava aineisto ja mittaa lajitteluun kuluvat ajat. 
 
 
 10.	Chain of Responsibility: Yrityksessä työntekijän lähiesimies pystyy hyväksymään  2 % palkankorotuspyynnöt. Pyyntö pitää ohjata yksikön päällikölle, jos se ylittää 2 % mutta on alle 5 %. Tätä suuremmat palkankorotuspyynnöt ohjataan yrityksen toimitusjohtajalle. Esitä, kuinka ratkaiset työntekijän palkankorotuspyynnön käsittelyn Chain of Responsibility –mallilla.
 
 
-11.	Memento: Arvuuttajalla on useita asiakkaita (säikeitä), joita kutakin varten se arpoo luvun, jota asiakas yrittää arvata toistuvasti. Peli käynnistyy siten, että asiakas ilmoittautuu peliin mukaan Arvuuttajan liityPeliin()-metodilla (asiakas välittää itsensä parametrina), Metodissa arvuuttaja arpoo luvun ja tallentaa sen. 
+11.	Memento: Arvuuttajalla on useita asiakkaita (säikeitä), joita kutakin varten se arpoo luvun, jota asiakas yrittää arvata toistuvasti.
+ Peli käynnistyy siten, että asiakas ilmoittautuu peliin mukaan Arvuuttajan liityPeliin()-metodilla (asiakas välittää itsensä parametrina), Metodissa arvuuttaja arpoo luvun ja tallentaa sen. 
 
-Perinteinen tapa toteuttaa Arvuuttaja, on määritellä siihen HashMap, jossa säilytetään asiakaskohtaiset tiedot (key = asiakas, value=luku). Arvatessaan lukua asiakas välittää arvaus()-kutsussa parametrina itsensä ja arvauksensa. Paluuarvona on true tai false.
+Perinteinen tapa toteuttaa Arvuuttaja, on määritellä siihen HashMap, jossa säilytetään asiakaskohtaiset tiedot (key = asiakas, value=luku). 
+Arvatessaan lukua asiakas välittää arvaus()-kutsussa parametrina itsensä ja arvauksensa. Paluuarvona on true tai false.
 
-Mementoa käytettäessä HashMap-ratkaisua ei tarvita eikä asiakkaan viitteen välittämistä arvuuttajalle. Arvuuttaja palauttaa liityPeliin()-metodissa asiakkaalle Mementon, jossa on arvottu luku, joten  Arvuuttajan ei sitä tarvitse muistaa. Huomaa, että asiakas ei saa päästä lukuun käsiksi! Jokaisen arvauksensa yhteydessä asiakas välittää Arvuuttajalle Mementon, jossa olevaa lukua Arvuuttaja vertaa uuteen arvaukseen ja kertoo, kuinka kävi. Peli päättyy, kun kaikki säikeet ovat arvanneet oikein.
+Mementoa käytettäessä HashMap-ratkaisua ei tarvita eikä asiakkaan viitteen välittämistä arvuuttajalle. 
+Arvuuttaja palauttaa liityPeliin()-metodissa asiakkaalle Mementon, jossa on arvottu luku, joten  Arvuuttajan ei sitä tarvitse muistaa.
+ Huomaa, että asiakas ei saa päästä lukuun käsiksi! Jokaisen arvauksensa yhteydessä asiakas välittää Arvuuttajalle Mementon, jossa olevaa lukua Arvuuttaja vertaa uuteen arvaukseen ja kertoo, kuinka kävi.
+  Peli päättyy, kun kaikki säikeet ovat arvanneet oikein.
 Toteuta ohjelma Javalla.
 
 
-12.	Proxy: Laajenna Wikipediassa olevan Proxy-esimerkkiä  http://en.wikipedia.org/wiki/Proxy_pattern siten, että lisäät Image-rajapintaan showData()-metodin, joka näyttää kuvan nimen. Lisää pääohjelmaan valokuvakansio (esim. List-rakenne), johon lisäät valokuvia proxyinä. Tulosta pääohjelmassa tiedot valokuvakansion sisällöstä (kuvia ei ladata). Esitä myös, kuinka valokuvakansiota voidaan selata (kuvat ladataan, ellei vielä ole ladattu).
+12.	Proxy: Laajenna Wikipediassa olevan Proxy-esimerkkiä   siten, että lisäät Image-rajapintaan showData()-metodin, joka näyttää kuvan nimen. 
+Lisää pääohjelmaan valokuvakansio (esim. List-rakenne), johon lisäät valokuvia proxyinä. Tulosta pääohjelmassa tiedot valokuvakansion sisällöstä (kuvia ei ladata). 
+Esitä myös, kuinka valokuvakansiota voidaan selata (kuvat ladataan, ellei vielä ole ladattu).
 
 
 13.	Visitor:  tee a) tai b)
