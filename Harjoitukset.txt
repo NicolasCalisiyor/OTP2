@@ -214,11 +214,16 @@ Esitä myös, kuinka valokuvakansiota voidaan selata (kuvat ladataan, ellei viel
 
 13.	Visitor:  tee a) tai b)
 
-a) Pohdi voitaisiinko Visitor-mallia käyttää State-mallin kontekstiolioiden käsittelyyn. Kontekstioliot olisivat eri pelihahmoja, jotka ovat eri tiloissa. Pelissä haluttaisiin käydä kaikki pelihahmot läpi esim. siten että jokaiselle hahmolle annetaan bonuspisteitä. Annettavien bonuspisteiden määrä voi riippua kuitenkin hahmosta ja sen tilasta. Bonus-visitorissa on metodi kunkin hahmon kutakin tilaa kohden. Esitä tällainen bonuspisteiden jakaminen Java-koodina.
+a) Pohdi voitaisiinko Visitor-mallia käyttää State-mallin kontekstiolioiden käsittelyyn. Kontekstioliot olisivat eri pelihahmoja, jotka ovat eri tiloissa.
+ Pelissä haluttaisiin käydä kaikki pelihahmot läpi esim. siten että jokaiselle hahmolle annetaan bonuspisteitä.
+  Annettavien bonuspisteiden määrä voi riippua kuitenkin hahmosta ja sen tilasta. Bonus-visitorissa on metodi kunkin hahmon kutakin tilaa kohden. 
+   Esitä tällainen bonuspisteiden jakaminen Java-koodina.
 
 Toteutuksesta: Kontekstioliolle sanotaan accept(visitor), joka delegoi pyynnön tilaoliolleen.
 
-b) Voitaisiinko päätös seuraavasta tilasta ulkoistaa Visitoriin. Tilaolio tai konteksti kutsuisi kunkin metodin lopuksi Visitoria (accept-kutsua ei tarvittaisi), joka tekee päätöksen mahdollisesta tilan vaihdosta. Esitä Java-koodina.  
+b) Voitaisiinko päätös seuraavasta tilasta ulkoistaa Visitoriin.
+ Tilaolio tai konteksti kutsuisi kunkin metodin lopuksi Visitoria (accept-kutsua ei tarvittaisi), joka tekee päätöksen mahdollisesta tilan vaihdosta.
+  Esitä Java-koodina.  
 
 
 14.	Builder: Kirjoita ohjelma, jossa rakennat kerroshampurilaisen Builder-mallin mukaisesti. Toteuta vähintään kaksi konkreettista builderia (Hesburger ja McDonalds). Toteuta builderit siten, että kummallakin on eri tietorakenne hampurilaisen koostamiseksi. Toisella esim. List, johon tallennetaan hampurilaisen osat olioina (määrittele osille omat luokat, esim. salaattia voisi edustaa konkreettisen builderin päässä class JäävuoriSalaatti, josta luodaan ilmentymä listaan) ja toisella StringBuilder, jossa osia edustavat merkkijonot. Konkreettisilla Buildereilla on oikeaa tyyppiä palauttavat getBurger()-metodit eli ne palauttavat hampurilaisen sellaisena tietorakenteena, jona se on luotu. 
