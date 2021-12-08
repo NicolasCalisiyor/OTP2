@@ -235,19 +235,31 @@ b) Voitaisiinko päätös seuraavasta tilasta ulkoistaa Visitoriin.
 
 15.	Adapter: Adapter-ratkaisu mahdollistaa olemassa olevan ohjelmamoduulin (esim. luokka) käyttämisen vaikka sen rajapinta olisi erilainen, kuin mitä asiakas haluaa käyttää. Mieti itse tätä havainnollistava esimerkki ja toteuta ohjelma, jossa esität, kuinka adapterin avulla olemassa oleva luokka palveluineen voidaan ottaa käyttöön muuttamatta tätä millään tavalla.
 
-16.	Bridge: Bridge-mallin idea on, että jokin yhdellä ohjelmistokerroksella toimiva abstraktio voidaan toteuttaa eri alustoilla ja että alusta voidaan vaikkapa vaihtaa kääntämättä asiakasohjelmaa. Valmistaudu kertomaan  jokin esimerkki, jossa yhden kerroksen palvelu voidaan toteuttaa kahdella eri alustalla. Palauta kertomuksesi kirjallisessa muodossa OMAaan.
+16.	Bridge: Bridge-mallin idea on, että jokin yhdellä ohjelmistokerroksella toimiva abstraktio voidaan toteuttaa eri alustoilla 
+ja että alusta voidaan vaikkapa vaihtaa kääntämättä asiakasohjelmaa. 
+Valmistaudu kertomaan  jokin esimerkki, jossa yhden kerroksen palvelu voidaan toteuttaa kahdella eri alustalla. 
+Palauta kertomuksesi kirjallisessa muodossa OMAaan.
 
 
 17.	Flyweight: Lue Flyweight-mallia käsittelevä artikkeli:
 
 https://www.infoworld.com/article/2073632/make-your-apps-fly.html
 
-Testaa esimerkit 1 ja 2: String ja Border. Testaa myös OMAn Dokumentit/Tehtäväpohjat-kansiossa oleva JavaFX-esimerkki, jossa on samanlainen asetelma kuin Java Swing Border -esimerkissä. Valmistaudu esittelemään testiajot ja kertomaan, mitä testien perusteella voidaan todeta. Palauta raportti OMAan.
+Testaa esimerkit 1 ja 2: String ja Border. Testaa myös OMAn Dokumentit/Tehtäväpohjat-kansiossa oleva JavaFX-esimerkki, 
+jossa on samanlainen asetelma kuin Java Swing Border -esimerkissä. Valmistaudu esittelemään testiajot ja kertomaan, mitä testien perusteella voidaan todeta. 
+Palauta raportti OMAan.
 
 
-18.	Prototype: Kirjoita kello+viisarit -ohjelma, jossa  kello koostuu viisariolioista ja selvitä sen avulla, kuinka Javassa toteutetaan Prototype-mallia (Object.clone()). Esitä sellainen esimerkki, jossa toteutuu syväkopiointi. Eli: tee kellosta klooni ja katso kuinka se käyttäytyy suhteessa alkuperäiseen, jos muutat alkuperäisen tai kloonin kellonaikaa.
+18.	Prototype: Kirjoita kello+viisarit -ohjelma, jossa  kello koostuu viisariolioista ja selvitä sen avulla, 
+kuinka Javassa toteutetaan Prototype-mallia (Object.clone()). Esitä sellainen esimerkki, jossa toteutuu syväkopiointi. 
+Eli: tee kellosta klooni ja katso kuinka se käyttäytyy suhteessa alkuperäiseen, jos muutat alkuperäisen tai kloonin kellonaikaa.
 
-19.	Mediator: Suunnittele mäkihyppykisan luokat ja niiden välinen toiminta. Luokkia: Hyppääjä, Hyppy (jokaisella hyppääjällä on kaksi hyppyä, hyppääjä ylläpitää omat hyppynsä pituus- ja tyylipistetietoineen 2-alkioisessa Hyppy-taulukossaan), Mittamies, Arvostelutuomarit (5 kpl), Tulostaulu, Tulosrivi, Kisasihteeri (laskee hypyn jälkeen sille pisteet eli on käytännössä pelkkä laskukaavan tunteva laskukone, Mediator välittää sille kaikki lähtötiedot). Mediator on vastuussa edellä esitettyjen luokkien välisen kommunikointiprotokollan toteuttamisesta. Suunnittele se. Esitä  ratkaisu sekvenssikaavion avulla. 
+19.	Mediator: Suunnittele mäkihyppykisan luokat ja niiden välinen toiminta. 
+Luokkia: Hyppääjä, Hyppy (jokaisella hyppääjällä on kaksi hyppyä, hyppääjä ylläpitää omat hyppynsä pituus- 
+ja tyylipistetietoineen 2-alkioisessa Hyppy-taulukossaan), Mittamies, Arvostelutuomarit (5 kpl), Tulostaulu,
+ Tulosrivi, Kisasihteeri (laskee hypyn jälkeen sille pisteet eli on käytännössä pelkkä laskukaavan tunteva laskukone, Mediator
+  välittää sille kaikki lähtötiedot). Mediator on vastuussa edellä esitettyjen luokkien välisen kommunikointiprotokollan toteuttamisesta.
+   Suunnittele se. Esitä  ratkaisu sekvenssikaavion avulla. 
 
 
 20.	Iterator: a) Tutki kuinka Javan iteraattori käyttäytyy, jos yritetään iteroida kokoelmaa kahdella säikeellä yhtä aikaa, kun molemmilla on oma iterattori.
@@ -257,7 +269,9 @@ d) Keksi jotain muuta testattavaa (esim. iteraattorin remove).
 
 21.	Facade: 
 
-Muuta Javaksi ja täydennä Wikipediassa olevaa C++-ohjelman runkoa (https://en.wikipedia.org/wiki/Facade_pattern) tietokoneen ”boottaus-simulaattorille”. Liitä ohjelmaan välivaiheiden tulostuksia. Ohjelman suorittaminen: tulosta muistiin ladatut datat (vaikkapa merkit, char) "muistiosoite" kerrallaan. (Korvaa C++:n structit Javan luokilla ja lisää niihin tarvittavat muuttujat/tietorakenteet (harkitse taulukkorakenteita) .)
+Muuta Javaksi ja täydennä Wikipediassa olevaa C++-ohjelman runkoa (https://en.wikipedia.org/wiki/Facade_pattern) tietokoneen ”boottaus-simulaattorille”. 
+Liitä ohjelmaan välivaiheiden tulostuksia. Ohjelman suorittaminen: tulosta muistiin ladatut datat (vaikkapa merkit, char) "muistiosoite" kerrallaan.
+ (Korvaa C++:n structit Javan luokilla ja lisää niihin tarvittavat muuttujat/tietorakenteet (harkitse taulukkorakenteita) .)
 Lue: https://en.wikipedia.org/wiki/Boot_sector
 
 
