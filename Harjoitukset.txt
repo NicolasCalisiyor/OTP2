@@ -191,7 +191,10 @@ b) Toteuta vähintään kolme erilaista taulukon lajittelualgoritmia (lähdekood
 Esitä sovellus, jossa lajittelualgoritmin valinta toteutetaan Strategy-mallin mukaisesti. Generoi tarpeeksi suuri lajiteltava aineisto ja mittaa lajitteluun kuluvat ajat. 
 
 
-10.	Chain of Responsibility: Yrityksessä työntekijän lähiesimies pystyy hyväksymään  2 % palkankorotuspyynnöt. Pyyntö pitää ohjata yksikön päällikölle, jos se ylittää 2 % mutta on alle 5 %. Tätä suuremmat palkankorotuspyynnöt ohjataan yrityksen toimitusjohtajalle. Esitä, kuinka ratkaiset työntekijän palkankorotuspyynnön käsittelyn Chain of Responsibility –mallilla.
+10.	Chain of Responsibility: Yrityksessä työntekijän lähiesimies pystyy hyväksymään  2 % palkankorotuspyynnöt. 
+Pyyntö pitää ohjata yksikön päällikölle, jos se ylittää 2 % mutta on alle 5 %. 
+Tätä suuremmat palkankorotuspyynnöt ohjataan yrityksen toimitusjohtajalle. 
+Esitä, kuinka ratkaiset työntekijän palkankorotuspyynnön käsittelyn Chain of Responsibility –mallilla.
 
 
 11.	Memento: Arvuuttajalla on useita asiakkaita (säikeitä), joita kutakin varten se arpoo luvun, jota asiakas yrittää arvata toistuvasti.
